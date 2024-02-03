@@ -3,7 +3,8 @@ import ReactPlayer from 'react-player';
 import axios from 'axios';
 
 const Livestream = () => {
-  const [overlayData, setOverlayData] = useState([]);
+    const [overlayData, setOverlayData] = useState([]);
+
   const [newOverlay, setNewOverlay] = useState({
     content: '',
     position: { top: 0, left: 0 },
@@ -15,16 +16,13 @@ const Livestream = () => {
   const [updateSizeInput, setUpdateSizeInput] = useState({ width: 100, height: 50 });
 
   // Fetch overlay data from backend every render
-  const fetchOverlayData = () => {
+  useEffect(() => {
     axios.get('http://localhost:5000/api/overlays')
       .then(response => setOverlayData(response.data))
       .catch(error => console.error(error));
-  };
+  }, []);
 
-  // Fetch overlay data on component mount
-  useEffect(() => {
-    fetchOverlayData();
-  }, []);  
+
 
 
   const videoPlayerWidth = 640; // Replace with the actual width of your video player
