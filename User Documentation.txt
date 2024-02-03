@@ -1,0 +1,30 @@
+User Documentation
+App Setup and Usage
+Setting up the App
+
+Ensure that you have the necessary dependencies installed.
+Clone the app repository from https://github.com/Sourabh-Gor/Overlay_API.
+Install the required packages using npm install or yarn install.
+Inputting RTSP URL
+
+Launch the app.
+Locate the input field for the RTSP URL.
+Enter the RTSP URL of the video stream you want to overlay.
+Managing Overlays
+
+Creating an Overlay:
+
+Enter the content, position (top, left), and size (width, height) in the respective input fields.
+Click the "Create Overlay" button.
+Updating an Overlay:
+
+Click the "Update" button next to the overlay you want to modify.
+Enter the updated content, position, or size in the provided input fields.
+Click the "Save" button.
+Deleting an Overlay:
+
+Click the "Delete" button next to the overlay you want to remove.
+Saving Changes
+
+Any changes made to overlays are automatically saved. No additional steps are required.
+By following these instructions, users should be able to set up the app, input the RTSP URL, and manage overlays effectively.
